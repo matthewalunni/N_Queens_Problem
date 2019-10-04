@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 
 
-namespace Assign_1
+namespace N_Queens_Problem
 {
     /** Matthew Alunni
     *  5865647

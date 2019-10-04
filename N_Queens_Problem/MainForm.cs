@@ -3,20 +3,20 @@ using System.Collections.Generic;
 using System.Drawing;
 using System.Windows.Forms;
 
-namespace Assign_1
+namespace N_Queens_Problem
 {
     /** Matthew Alunni
      *  5865647
      *  COSC 3P71
      *  Assignment 1 **/
 
-    public partial class Form1 : Form
+    public partial class MainForm : Form
     {
 
         List<Solution> solutions = new List<Solution>(); //list of solutions
         int current = -1; //which solution is being displayed
 
-        public Form1()
+        public MainForm()
         {
             InitializeComponent();
         }
@@ -89,7 +89,7 @@ namespace Assign_1
 
             while (Node.Row >= 0)
             {
-                theBoard[Node.Row, Node.Line - 1].Image = Assign_1.Properties.Resources.crown;
+                theBoard[Node.Row, Node.Line - 1].Image = N_Queens_Problem.Properties.Resources.crown;
                 theBoard[Node.Row, Node.Line - 1].SizeMode = PictureBoxSizeMode.StretchImage;
                 Node = Node.Parent;
             }

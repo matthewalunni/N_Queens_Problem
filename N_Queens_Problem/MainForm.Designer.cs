@@ -1,6 +1,6 @@
-﻿namespace Assign_1
+﻿namespace N_Queens_Problem
 {
-    partial class Form1
+    partial class MainForm
     {
         /// <summary>
         /// Required designer variable.
@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnDrawBoard = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
@@ -45,7 +46,7 @@
             // panel1
             // 
             this.panel1.Location = new System.Drawing.Point(9, 39);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(450, 450);
             this.panel1.TabIndex = 0;
@@ -53,7 +54,7 @@
             // btnDrawBoard
             // 
             this.btnDrawBoard.Location = new System.Drawing.Point(10, 494);
-            this.btnDrawBoard.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnDrawBoard.Margin = new System.Windows.Forms.Padding(2);
             this.btnDrawBoard.Name = "btnDrawBoard";
             this.btnDrawBoard.Size = new System.Drawing.Size(82, 33);
             this.btnDrawBoard.TabIndex = 1;
@@ -144,7 +145,7 @@
             // buttonHeuristic
             // 
             this.buttonHeuristic.Location = new System.Drawing.Point(93, 494);
-            this.buttonHeuristic.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.buttonHeuristic.Margin = new System.Windows.Forms.Padding(2);
             this.buttonHeuristic.Name = "buttonHeuristic";
             this.buttonHeuristic.Size = new System.Drawing.Size(82, 33);
             this.buttonHeuristic.TabIndex = 10;
@@ -152,7 +153,7 @@
             this.buttonHeuristic.UseVisualStyleBackColor = true;
             this.buttonHeuristic.Click += new System.EventHandler(this.buttonHeuristic_Click);
             // 
-            // Form1
+            // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -168,9 +169,10 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnDrawBoard);
             this.Controls.Add(this.panel1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.Name = "Form1";
-            this.Text = "N Queen Problem";
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Name = "MainForm";
+            this.Text = "N-Queens-Problem";
             ((System.ComponentModel.ISupportInitialize)(this.numericNumberOfQueens)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
